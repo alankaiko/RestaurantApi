@@ -14,21 +14,15 @@ import java.time.LocalDate;
 public abstract class AbstractEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long codigo;
+    private Long idCode;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate datacadastro;
-
-    private Boolean bloqueioEdicao;
-
-    private Long idUsuarioBloqueio;
-
-    private LocalDate dataBloqueio;
+    private LocalDate creationDate;
 
     @PrePersist
-    public void atualizarData() {
-        if (this.datacadastro == null)
-            this.datacadastro = LocalDate.now();
+    public void updateDate() {
+        if (this.creationDate == null)
+            this.creationDate = LocalDate.now();
     }
 
 }

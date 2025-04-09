@@ -8,28 +8,28 @@ import org.springframework.data.domain.Sort;
 @Getter
 @Setter
 public class AbstractDTO implements Pageable {
-    private int pagina;
+    private int page;
 
-    private int itensPorPagina;
+    private int itensPage;
 
     @Override
     public int getPageNumber() {
-        return this.getPagina();
+        return this.getPage();
     }
 
     @Override
     public int getPageSize() {
-        return this.getItensPorPagina();
+        return this.getItensPage();
     }
 
     @Override
     public long getOffset() {
-        return this.itensPorPagina * this.getPagina();
+        return this.itensPage * this.getPage();
     }
 
     @Override
     public Sort getSort() {
-        return Sort.by("codigo").ascending();
+        return Sort.by("id_code").ascending();
     }
 
     @Override
