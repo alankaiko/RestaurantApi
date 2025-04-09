@@ -1,7 +1,7 @@
-package br.com.restaurant.avaliation.core.repository;
+package br.com.restaurant.avaliation.abstract_core.repository;
 
-import br.com.restaurant.avaliation.core.model.AbstractDTO;
-import br.com.restaurant.avaliation.core.model.AbstractEntity;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractDTO;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractEntity;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;

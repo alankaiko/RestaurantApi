@@ -1,4 +1,4 @@
-package br.com.restaurant.avaliation.core.utils;
+package br.com.restaurant.avaliation.abstract_core.utils;
 
 
 import java.lang.annotation.ElementType;

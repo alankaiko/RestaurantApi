@@ -1,11 +1,10 @@
-package br.com.restaurant.avaliation.core.service.impl;
+package br.com.restaurant.avaliation.abstract_core.service.impl;
 
-import br.com.restaurant.avaliation.core.model.AbstractDTO;
-import br.com.restaurant.avaliation.core.model.AbstractEntity;
-import br.com.restaurant.avaliation.core.repository.AbstractRepository;
-import br.com.restaurant.avaliation.core.service.AbstractService;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractDTO;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractEntity;
+import br.com.restaurant.avaliation.abstract_core.repository.AbstractRepository;
+import br.com.restaurant.avaliation.abstract_core.service.AbstractService;
 import org.springframework.data.domain.Page;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -21,22 +20,22 @@ public abstract class AbstractServiceImpl<T extends AbstractEntity, D extends Ab
     }
 
     @Override
-    public T salvar(T entity) {
+    public T saveEntity(T entity) {
         return this.dao.save(entity);
     }
 
     @Override
-    public void deletar(Long codigo) {
-        this.dao.deleteById(codigo);
+    public void deleteEntity(Long idCode) {
+        this.dao.deleteById(idCode);
     }
 
     @Override
-    public T buscarId(Long codigo) {
-        return this.dao.findById(codigo).orElse((T) null);
+    public T findById(Long idCode) {
+        return this.dao.findById(idCode).orElse((T) null);
     }
 
     @Override
-    public List<T> listar() {
+    public List<T> listEntities() {
         return this.dao.findAll();
     }
 
@@ -45,8 +44,4 @@ public abstract class AbstractServiceImpl<T extends AbstractEntity, D extends Ab
         return this.dao.filtering(filter);
     }
 
-    @Transactional(readOnly = true)
-    public ResponseEntity<?> imprimir(Long codigo) {
-        return null;
-    }
 }

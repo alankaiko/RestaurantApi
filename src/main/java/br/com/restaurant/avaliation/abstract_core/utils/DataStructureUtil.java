@@ -1,4 +1,4 @@
-package br.com.restaurant.avaliation.core.utils;
+package br.com.restaurant.avaliation.abstract_core.utils;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;

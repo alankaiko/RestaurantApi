@@ -1,6 +1,6 @@
 package br.com.restaurant.avaliation.model;
 
-import br.com.restaurant.avaliation.core.model.AbstractEntity;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractEntity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

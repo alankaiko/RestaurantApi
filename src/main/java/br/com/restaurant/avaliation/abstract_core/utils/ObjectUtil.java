@@ -1,7 +1,7 @@
-package br.com.restaurant.avaliation.core.utils;
+package br.com.restaurant.avaliation.abstract_core.utils;
 
 
-import br.com.restaurant.avaliation.core.model.AbstractEntity;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractEntity;
 import org.apache.commons.beanutils.PropertyUtils;
 
 public class ObjectUtil {

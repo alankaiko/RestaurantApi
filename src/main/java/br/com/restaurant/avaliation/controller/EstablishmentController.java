@@ -1,6 +1,6 @@
 package br.com.restaurant.avaliation.controller;
 
-import br.com.restaurant.avaliation.core.controller.AbstractController;
+import br.com.restaurant.avaliation.abstract_core.controller.AbstractController;
 import br.com.restaurant.avaliation.model.Establishment;
 import br.com.restaurant.avaliation.model.dto.EstablishmentDTO;
 import br.com.restaurant.avaliation.service.EstablishmentService;

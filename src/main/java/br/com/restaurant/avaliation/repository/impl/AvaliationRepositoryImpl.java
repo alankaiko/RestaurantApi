@@ -1,6 +1,6 @@
 package br.com.restaurant.avaliation.repository.impl;
 
-import br.com.restaurant.avaliation.core.repository.impl.AbstractRepositoryImpl;
+import br.com.restaurant.avaliation.abstract_core.repository.impl.AbstractRepositoryImpl;
 import br.com.restaurant.avaliation.model.Avaliation;
 import br.com.restaurant.avaliation.model.dto.AvaliationDTO;
 import br.com.restaurant.avaliation.repository.AvaliationRepository;

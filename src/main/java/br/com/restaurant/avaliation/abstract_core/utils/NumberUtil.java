@@ -1,4 +1,4 @@
-package br.com.restaurant.avaliation.core.utils;
+package br.com.restaurant.avaliation.abstract_core.utils;
 
 import org.springframework.context.i18n.LocaleContextHolder;
 

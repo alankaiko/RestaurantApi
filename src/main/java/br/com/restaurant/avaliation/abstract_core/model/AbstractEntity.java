@@ -1,4 +1,4 @@
-package br.com.restaurant.avaliation.core.model;
+package br.com.restaurant.avaliation.abstract_core.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

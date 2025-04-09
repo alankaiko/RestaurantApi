@@ -1,11 +1,11 @@
-package br.com.restaurant.avaliation.core.repository.impl;
+package br.com.restaurant.avaliation.abstract_core.repository.impl;
 
-import br.com.restaurant.avaliation.core.model.AbstractDTO;
-import br.com.restaurant.avaliation.core.model.AbstractEntity;
-import br.com.restaurant.avaliation.core.repository.AbstractRepository;
-import br.com.restaurant.avaliation.core.utils.DynamicQuery;
-import br.com.restaurant.avaliation.core.utils.ObjectUtil;
-import br.com.restaurant.avaliation.core.utils.StringUtil;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractDTO;
+import br.com.restaurant.avaliation.abstract_core.model.AbstractEntity;
+import br.com.restaurant.avaliation.abstract_core.repository.AbstractRepository;
+import br.com.restaurant.avaliation.abstract_core.utils.DynamicQuery;
+import br.com.restaurant.avaliation.abstract_core.utils.ObjectUtil;
+import br.com.restaurant.avaliation.abstract_core.utils.StringUtil;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
