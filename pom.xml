@@ -12,7 +12,7 @@
 
     <groupId>br.com.restaurant.avaliation</groupId>
     <artifactId>RestaurantApi</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>RestaurantApi</name>
     <description>Demo project for Spring Boot</description>
     <url/>
@@ -36,6 +36,20 @@
         <java.version>17</java.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>maven.scijava.org</id>
+            <name>SciJava Public Repository</name>
+            <url>https://maven.scijava.org/content/repositories/public/</url>
+        </repository>
+
+        <repository>
+            <id>maven-central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -54,16 +68,29 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.10.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
